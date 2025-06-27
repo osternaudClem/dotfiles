@@ -1,0 +1,7 @@
+{
+  "clock": {
+    "timezone": "Europe/Paris",
+    "locale": "fr_FR.utf8",
+    "format": "{:L%d %B, %H:%M}"
+  }
+}

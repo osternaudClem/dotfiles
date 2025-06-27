@@ -1,0 +1,42 @@
+{
+  // 🎵 Song Title (centered)
+  "custom/media": {
+    "format": "{0}",
+    "tooltip": false,
+    "justify": "center",
+    "max-length": 40,
+    "format-icons": {
+      "spotify": "\uF001",
+      "default": "\uF001"
+    },
+    "escape": true,
+    "exec": "~/.config/waybar/music.sh --title",
+    "interval": 10,
+    "on-click": "hyprctl dispatch workspace 8"
+  },
+
+  // ⏮ Previous Button
+  "custom/media-prev": {
+    "format": "",
+    "tooltip": "Previous",
+    "on-click": "~/.config/waybar/music.sh --prev",
+    "interval": "once"
+  },
+
+  // ⏯ Play/Pause Button
+  "custom/media-playpause": {
+    "format": "{}",
+    "exec": "~/.config/waybar/music.sh --icon",
+    "on-click": "~/.config/waybar/music.sh --toggle",
+    "interval": 5,
+    "tooltip": false
+  },
+
+  // ⏭ Next Button
+  "custom/media-next": {
+    "format": "",
+    "tooltip": "Next",
+    "on-click": "~/.config/waybar/music.sh --next",
+    "interval": "once"
+  }
+}

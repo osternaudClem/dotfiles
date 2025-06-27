@@ -1,0 +1,161 @@
+@import "colors.css";
+
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  font-size: 13px;
+  min-height: 4px;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
+window#waybar {
+  background: @bg;
+  color: @textActive;
+  background: transparent;
+}
+
+#backlight,
+#battery,
+#bluetooth,
+#custom-cliphist,
+#clock,
+#custom-cpuinfo,
+#cpu,
+#custom-gpuinfo,
+#idle_inhibitor,
+#custom-keybindhint,
+#language,
+#memory,
+#mpris,
+#network,
+#custom-notifications,
+#custom-power,
+#pulseaudio,
+#custom-spotify,
+#taskbar,
+#custom-theme,
+#custom-media,
+#tray,
+#window,
+#workspaces {
+  background: @bg;
+  color: @textActive;
+  border-radius: 8px;
+  opacity: 1;
+  margin: 0px 2px 0px 2px;
+  padding: 4px 8px 4px 8px;
+}
+
+#custom-media-prev,
+#custom-media-playpause,
+#custom-media-next {
+  background: @bg;
+  color: @textActive;
+  opacity: 1;
+  padding: 4px 8px 4px 8px;
+}
+
+#custom-media-prev:hover,
+#custom-media-playpause:hover,
+#custom-media-next:hover {
+  background: @bgActive;
+}
+
+#custom-media-next {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+#custom-media-prev {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+#custom-shutdown {
+  margin: 0px 2px 0px 2px;
+  padding: 4px 8px 4px 8px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left,
+.modules-right {
+  margin: 4px 2px 0 2px;
+}
+
+.modules-center {
+  margin-top: 4px;
+}
+
+#workspaces {
+  padding: 4px;
+}
+
+#workspaces label {
+  font-size: 16px;
+  padding: 0px 0px 0px 4px;
+}
+
+#workspaces button,
+#workspaces button:hover {
+  margin: 0px 2px;
+  color: @text;
+  border-radius: 4px;
+  min-width: 0;
+}
+
+#workspaces button.visible,
+#workspaces button.active {
+  color: @textActive;
+  background-color: @bgActive;
+}
+
+#workspaces button.special,
+#workspaces button.urgent {
+  color: #db4b4b;
+}
+
+#cpu {
+  color: #9d7cd8;
+}
+
+#memory {
+  color: #449dab;
+}
+
+#custom-media {
+  color: #9ece6a;
+}
+
+#custom-gpu {
+  color: #7aa2f7;
+}
+
+#custom-shutdown {
+  color: #a6333f;
+}
+
+#clock {
+  background: @bg;
+  color: #ffe8e7;
+}
+
+.colors {
+  color: #6878a6;
+  color: #5d6791;
+  color: #db4b4b;
+  color: #a6333f;
+  color: #9ece6a;
+  color: #9ece6a;
+  color: #e0af68;
+  color: #bba461;
+  color: #7aa2f7;
+  color: #6d91de;
+  color: #bb9af7;
+  color: #9d7cd8;
+  color: #41a6b5;
+  color: #449dab;
+  color: @text;
+  color: #9aa5ce;
+}

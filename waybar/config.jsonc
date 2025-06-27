@@ -1,0 +1,62 @@
+[
+  // -*- mode: jsonc -*-
+  // Common module definitions to avoid duplication
+  {
+    // Center (DP-1)
+    "output": "DP-1",
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": [
+      "custom/notifications",
+      "pulseaudio",
+      "mpd",
+      "network",
+      "custom/shutdown"
+      // "tray"
+    ],
+    "include": [
+      "~/.config/waybar/modules/common-workspaces.jsonc",
+      "~/.config/waybar/modules/common-clock.jsonc",
+      "~/.config/waybar/modules/common-mpd.jsonc",
+      "~/.config/waybar/modules/common-pulseaudio.jsonc",
+      "~/.config/waybar/modules/common-media.jsonc",
+      "~/.config/waybar/modules/common-notification.jsonc"
+    ],
+
+    "tray": {
+      // "icon-size": 21,
+      "spacing": 10
+    },
+    "custom/shutdown": {
+      "format": "",
+      "interval": "once",
+      "on-click": "wlogout -b 2"
+    },
+    "network": {
+      "format-wifi": "<span foreground='#f5e0dc'>  </span>{essid}",
+      "format-ethernet": "<span foreground='#f5e0dc'>󰤭  </span> Ethernet",
+      "format-linked": "{ifname} (No IP) ",
+      "format-disconnected": "<span foreground='#f5e0dc'>  </span>Disconnected",
+      "tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
+    }
+  },
+  {
+    // Right (HDMI-A-1)
+    "output": "HDMI-A-1",
+    "modules-left": [
+      "hyprland/workspaces",
+      "custom/media-prev",
+      "custom/media-playpause",
+      "custom/media-next",
+      "custom/media"
+    ],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio"],
+    "include": [
+      "~/.config/waybar/modules/common-workspaces.jsonc",
+      "~/.config/waybar/modules/common-clock.jsonc",
+      "~/.config/waybar/modules/common-pulseaudio.jsonc",
+      "~/.config/waybar/modules/common-media.jsonc"
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "hyprland/workspaces": {
+    "format": "{icon} ",
+    "format-icons": {
+      "1": "\ueb01",
+      "2": "\uF121",
+      "3": "\uF120",
+      "4": "\uea83",
+      "5": "\udb83\udede",
+      "6": "\ueb01",
+      "7": "\ueb01",
+      "8": "\uF1BC"
+    }
+  }
+}

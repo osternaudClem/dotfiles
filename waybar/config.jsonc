@@ -7,7 +7,10 @@
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
     "modules-right": [
+      "custom/test",
       "custom/notifications",
+      "custom/updates",
+      "custom/diskfree",
       "pulseaudio",
       "mpd",
       "network",
@@ -20,9 +23,14 @@
       "~/.config/waybar/modules/common-mpd.jsonc",
       "~/.config/waybar/modules/common-pulseaudio.jsonc",
       "~/.config/waybar/modules/common-media.jsonc",
-      "~/.config/waybar/modules/common-notification.jsonc"
+      "~/.config/waybar/modules/common-notification.jsonc",
+      "~/.config/waybar/modules/common-updates.jsonc",
+      "~/.config/waybar/modules/common-diskfree.jsonc"
     ],
-
+    "custom/test": {
+      "format": "Test Module",
+      "on-click": "notify-send 'Test Module Clicked!'"
+    },
     "tray": {
       // "icon-size": 21,
       "spacing": 10

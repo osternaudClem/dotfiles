@@ -16,30 +16,17 @@ window#waybar {
   background: transparent;
 }
 
-#backlight,
-#battery,
 #bluetooth,
-#custom-cliphist,
 #clock,
-#custom-cpuinfo,
-#cpu,
-#custom-gpuinfo,
-#idle_inhibitor,
-#custom-keybindhint,
-#language,
-#memory,
-#mpris,
 #network,
+#pulseaudio,
+#workspaces,
+#custom-cliphist,
 #custom-notifications,
 #custom-power,
-#pulseaudio,
-#custom-spotify,
 #taskbar,
-#custom-theme,
-#custom-media,
-#tray,
-#window,
-#workspaces {
+#custom-updates,
+#custom-diskfree {
   background: @bg;
   color: @textActive;
   border-radius: 8px;
@@ -48,6 +35,18 @@ window#waybar {
   padding: 4px 8px 4px 8px;
 }
 
+.modules-left,
+.modules-right {
+  margin: 4px 2px 0 2px;
+}
+
+.modules-center {
+  margin-top: 4px;
+}
+
+/* -----------------------------------------------------
+ * Custom Media
+ * ----------------------------------------------------- */
 #custom-media-prev,
 #custom-media-playpause,
 #custom-media-next {
@@ -73,21 +72,18 @@ window#waybar {
   border-bottom-left-radius: 8px;
 }
 
+/* -----------------------------------------------------
+ * Custom Shutdown
+ * ----------------------------------------------------- */
 #custom-shutdown {
   margin: 0px 2px 0px 2px;
   padding: 4px 8px 4px 8px;
+  color: #fff;
 }
 
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left,
-.modules-right {
-  margin: 4px 2px 0 2px;
-}
-
-.modules-center {
-  margin-top: 4px;
-}
-
+/* -----------------------------------------------------
+ * Workspaces
+ * ----------------------------------------------------- */
 #workspaces {
   padding: 4px;
 }
@@ -116,46 +112,22 @@ window#waybar {
   color: #db4b4b;
 }
 
-#cpu {
-  color: #9d7cd8;
+/* -----------------------------------------------------
+ * Custom Updates & Disk Free
+ * ----------------------------------------------------- */
+#custom-diskfree.green,
+#custom-updates.green {
+  background-color: #449dab;
 }
 
-#memory {
-  color: #449dab;
+#custom-diskfree.yellow,
+#custom-updates.yellow {
+  background-color: #e0af68;
+  color: #ffffff;
 }
 
-#custom-media {
-  color: #9ece6a;
-}
-
-#custom-gpu {
-  color: #7aa2f7;
-}
-
-#custom-shutdown {
-  color: #a6333f;
-}
-
-#clock {
-  background: @bg;
-  color: #ffe8e7;
-}
-
-.colors {
-  color: #6878a6;
-  color: #5d6791;
-  color: #db4b4b;
-  color: #a6333f;
-  color: #9ece6a;
-  color: #9ece6a;
-  color: #e0af68;
-  color: #bba461;
-  color: #7aa2f7;
-  color: #6d91de;
-  color: #bb9af7;
-  color: #9d7cd8;
-  color: #41a6b5;
-  color: #449dab;
-  color: @text;
-  color: #9aa5ce;
+#custom-diskfree.red,
+#custom-updates.red {
+  background-color: #db4b4b;
+  color: #ffffff;
 }

@@ -8,11 +8,12 @@ if status is-interactive
 end
 
 # # Start ssh-agent automatically
-# if not pgrep -u (whoami) ssh-agent > /dev/null
-#     eval (ssh-agent -c)
-# end
+if not pgrep -u (whoami) ssh-agent > /dev/null
+    eval (ssh-agent -c)
+end
 
 # # Load all keys
-# for key in ~/.ssh/id_*
-#     ssh-add $key >/dev/null ^&1
-# end
+ssh-add -l >/dev/null 2>&1
+or begin
+    ssh-add ~/.ssh/id_ed25519_github_perso
+end

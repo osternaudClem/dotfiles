@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+diff=$(git diff --cached)
+if [ -z "$diff" ]; then
+  echo "❌ No staged changes."
+  exit 1
+fi
+
+message=$(echo "$diff" | ollama run llama3.1:8b \
+  "Write ONLY a short conventional git commit message (max 50 chars), using type(scope): subject format (like feat(ui): add button). No explanation or backticks.")
+
+echo
+echo "💡 Suggested commit message:"
+echo "$message"
+echo
+
+echo "Choose an option:"
+echo "  [a] Accept and commit"
+echo "  [e] Edit manually"
+echo "  [c] Cancel"
+read -p "> " choice
+
+case "$choice" in
+  a|A)
+    git commit -m "$message"
+    ;;
+  e|E)
+    echo
+    # Use read -e -i for editable prefilled command
+    read -e -i "git commit -m \"$message\"" cmd
+    eval "$cmd"
+    ;;
+  *)
+    echo "🚫 Commit aborted."
+    ;;
+esac

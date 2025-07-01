@@ -3,6 +3,9 @@ starship init fish | source
 alias l="ls -l"
 alias dev="cd ~/dev"
 
+status --is-interactive; and pyenv init - | source
+status --is-interactive; and pyenv virtualenv-init - | source
+
 cd ~/dev
 
 if status is-interactive

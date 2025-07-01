@@ -8,6 +8,7 @@
     "modules-center": ["clock"],
     "modules-right": [
       "custom/notifications",
+      "custom/backup",
       "custom/updates",
       "custom/diskfree",
       "pulseaudio",
@@ -23,8 +24,10 @@
       "~/.config/waybar/modules/common-pulseaudio.jsonc",
       "~/.config/waybar/modules/common-media.jsonc",
       "~/.config/waybar/modules/common-notification.jsonc",
+      "~/.config/waybar/modules/common-backup.jsonc",
       "~/.config/waybar/modules/common-updates.jsonc",
-      "~/.config/waybar/modules/common-diskfree.jsonc"
+      "~/.config/waybar/modules/common-diskfree.jsonc",
+      "~/.config/waybar/modules/common-backup.jsonc"
     ],
     "tray": {
       // "icon-size": 21,

@@ -1,0 +1,11 @@
+{
+  "custom/backup": {
+    "format": "\udb80\udc6f {}",
+    "escape": true,
+    "return-type": "json",
+    "exec": "~/.config/cletus/scripts/check-backup.sh",
+    "interval": 1800
+    // "on-click": "kitty -e yay -Syu"
+    // "on-click-right": "~/.config/ml4w/settings/software.sh"
+  }
+}

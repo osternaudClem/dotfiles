@@ -26,7 +26,8 @@ window#waybar {
 #custom-power,
 #taskbar,
 #custom-updates,
-#custom-diskfree {
+#custom-diskfree,
+#custom-backup {
   background: @bg;
   color: @textActive;
   border-radius: 8px;

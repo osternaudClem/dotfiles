@@ -27,7 +27,8 @@ window#waybar {
 #taskbar,
 #custom-updates,
 #custom-diskfree,
-#custom-backup {
+#custom-backup,
+#custom-pomodoro {
   background: @bg;
   color: @textActive;
   border-radius: 8px;
@@ -131,4 +132,16 @@ window#waybar {
 #custom-updates.red {
   background-color: #db4b4b;
   color: #ffffff;
+}
+
+/* -----------------------------------------------------
+ * Custom Updates & Disk Free
+ * ----------------------------------------------------- */
+#custom-pomodoro.break {
+  background-color: #449dab;
+}
+
+#custom-pomodoro.done {
+  background-color: #a6e3a1;
+  color: #11111b;
 }

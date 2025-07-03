@@ -21,4 +21,5 @@ end
 ssh-add -l >/dev/null 2>&1
 or begin
     ssh-add ~/.ssh/id_ed25519_github_perso
+    ssh-add ~/.ssh/id_rsa_server
 end

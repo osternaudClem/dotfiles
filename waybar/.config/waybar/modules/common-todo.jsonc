@@ -1,0 +1,7 @@
+{
+  "custom/todo": {
+    "format": "\uf14a {}",
+    "exec": "todo summary-waybar",
+    "interval": 5
+  }
+}

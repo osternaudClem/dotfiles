@@ -28,7 +28,8 @@ window#waybar {
 #custom-updates,
 #custom-diskfree,
 #custom-backup,
-#custom-pomodoro {
+#custom-pomodoro,
+#custom-todo {
   background: @bg;
   color: @textActive;
   border-radius: 8px;
@@ -72,6 +73,10 @@ window#waybar {
 #custom-media-prev {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+}
+
+#custom-media {
+  padding-left: 10px;
 }
 
 /* -----------------------------------------------------

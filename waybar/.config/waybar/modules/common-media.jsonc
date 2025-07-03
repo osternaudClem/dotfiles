@@ -28,7 +28,7 @@
     "format": "{}",
     "exec": "~/.config/waybar/music.sh --icon",
     "on-click": "~/.config/waybar/music.sh --toggle",
-    "interval": 5,
+    "interval": 1,
     "tooltip": false
   },
 

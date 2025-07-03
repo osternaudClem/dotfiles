@@ -12,9 +12,9 @@
 }
 {
     "label" : "suspend",
-    "action" : "systemctl suspend",
-    "text" : "Suspend",
-    "keybind" : "u"
+    "action" : "hyprlock",
+    "text" : "Lock screen",
+    "keybind" : "l"
 }
 {
     "label" : "reboot",

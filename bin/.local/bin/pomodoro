@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 STATE_FILE="$HOME/.pomodoro_status"
-DEFAULT_DURATION=1  # minutes
-DEFAULT_BREAK=1      # minutes
+DEFAULT_DURATION=25  # minutes
+DEFAULT_BREAK=5      # minutes
 
 function start() {
     local end_time=$(($(date +%s) + $((DEFAULT_DURATION * 60))))

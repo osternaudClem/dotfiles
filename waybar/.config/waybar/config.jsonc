@@ -5,7 +5,7 @@
     // Center (DP-1)
     "output": "DP-1",
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["clock", "custom/pomodoro", "custom/todo"],
+    "modules-center": ["clock", "custom/pomodoro"],
     "modules-right": [
       "custom/notifications",
       "custom/backup",
@@ -28,8 +28,7 @@
       "~/.config/waybar/modules/common-updates.jsonc",
       "~/.config/waybar/modules/common-diskfree.jsonc",
       "~/.config/waybar/modules/common-backup.jsonc",
-      "~/.config/waybar/modules/common-pomodoro.jsonc",
-      "~/.config/waybar/modules/common-todo.jsonc"
+      "~/.config/waybar/modules/common-pomodoro.jsonc"
     ],
     "tray": {
       // "icon-size": 21,

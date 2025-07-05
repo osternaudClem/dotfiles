@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 # Check if backup file exists
-if [ ! -f /mnt/windows/endeavour-hyprland-full-backup.tar.gz ]; then
+if [ ! -f /media/data/endeavour-hyprland-full-backup.tar.gz ]; then
   printf '{"text": "No backup", "alt": "No backup", "tooltip": "No backup found", "class": "error"}'
   exit 1
 fi
 
 # Get the last modification time of the backup file
-LAST_BACKUP_TIME=$(stat -c "%Y" /mnt/windows/endeavour-hyprland-full-backup.tar.gz)
+LAST_BACKUP_TIME=$(stat -c "%Y" /media/data/endeavour-hyprland-full-backup.tar.gz)
 NOW=$(date +%s)
 DIFF=$((NOW - LAST_BACKUP_TIME))
 

@@ -1,7 +1,9 @@
 starship init fish | source
 
-alias l="ls -l"
 alias dev="cd ~/dev"
+
+# Abbrevations
+abbr -a l "ls -A -l --color=auto"
 
 status --is-interactive; and pyenv init - | source
 status --is-interactive; and pyenv virtualenv-init - | source
